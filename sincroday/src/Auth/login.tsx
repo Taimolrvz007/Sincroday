@@ -14,7 +14,7 @@ function Login() {
         <h1>Sincronizá tu día</h1>
         <p className="login-sub"></p>
 
-        <form>
+        <form onSubmit={(e) => { e.preventDefault(); navigate('/schedule') }}>
           <label>CORREO ELECTRÓNICO</label>
           <div className="input-group">
             <input type="email" placeholder="correo@ejemplo.com" />

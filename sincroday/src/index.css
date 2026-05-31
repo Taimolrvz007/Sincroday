@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/*
+ * Tailwind Preflight maneja los resets. Mantenemos solo los globales de marca
+ * que comparten las páginas existentes (login/register). Las reglas opinadas de
+ * `button`/`input` se eliminaron para no pisar las utilidades de Tailwind del
+ * componente ScheduleMeeting (las páginas de Auth usan sus propias clases CSS).
+ */
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -16,48 +18,4 @@ body {
 h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: -0.5px;
-}
-
-p {
-  font-weight: 300;
-  color: #444;
-}
-
-a {
-  text-decoration: none;
-  color: #6c63ff;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #4e47cc;
-}
-
-button {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  padding: 10px 24px;
-  border-radius: 8px;
-  border: none;
-  background-color: #6c63ff;
-  color: white;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-button:hover {
-  background-color: #4e47cc;
-}
-
-input, textarea {
-  font-family: 'Nunito', sans-serif;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px 14px;
-  outline: none;
-  transition: border 0.2s;
-}
-
-input:focus, textarea:focus {
-  border-color: #6c63ff;
 }
