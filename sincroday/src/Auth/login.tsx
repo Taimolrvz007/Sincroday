@@ -1,6 +1,9 @@
-import './loginStyles.css'
+import './authStyles.css'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
+  const navigate = useNavigate()
+
   return (
     <div className="login-wrapper">
       <div className="login-card">
@@ -38,7 +41,8 @@ function Login() {
         </button>
 
         <p className="register-link">
-          ¿No tienes cuenta? <a href="#">Regístrate</a>
+          ¿No tienes cuenta?{' '}
+          <a href="#" onClick={() => navigate('/register')}>Regístrate</a>
         </p>
       </div>
     </div>
