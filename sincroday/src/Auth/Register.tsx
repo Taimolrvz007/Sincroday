@@ -1,4 +1,4 @@
-import './authStyles.css'
+import './AuthStyles.css'
 import { useNavigate } from 'react-router-dom'
 
 function Register() {
