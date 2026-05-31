@@ -1,93 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
-.login-container {
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.login-wrapper {
   min-height: 100vh;
-  background-color: #f5f3ff;
+  background: #f5f3ff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Nunito', sans-serif;
+  padding: 2rem 1rem;
 }
 
 .login-card {
-  background-color: #ffffff;
-  padding: 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(108, 99, 255, 0.1);
+  background: #fff;
+  border-radius: 20px;
+  border: 1.5px solid #CECBF6;
+  padding: 2.5rem 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   text-align: center;
 }
 
-.login-card h1 {
-  color: #440B99;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.login-card p {
-  color: #888;
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3C3489;
   margin-bottom: 1.5rem;
 }
 
-.input-group {
-  text-align: left;
-  margin-bottom: 1.2rem;
+.login-brand-dot {
+  width: 10px;
+  height: 10px;
+  background: #7F77DD;
+  border-radius: 50%;
 }
 
-.input-group label {
-  display: block;
-  font-weight: 600;
-  color: #a30808;
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;
+.login-tag {
+  display: inline-block;
+  background: #EEEDFE;
+  color: #3C3489;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
 }
+
+h1 { font-size: 22px; color: #3C3489; margin-bottom: 4px; }
+
+.login-sub { font-size: 13px; color: #888; margin-bottom: 1.8rem; }
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: #534AB7;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.input-group { margin-bottom: 1.1rem; }
 
 .input-group input {
   width: 100%;
-  padding: 12px 16px;
-  border: 1.5px solid #ddd;
+  padding: 12px 14px;
+  border: 1.5px solid #CECBF6;
   border-radius: 10px;
   font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   outline: none;
-  transition: border 0.2s;
+  color: #1a1a2e;
 }
 
-.input-group input:focus {
-  border-color: #6c63ff;
-}
+.input-group input:focus { border-color: #7F77DD; }
+
+.forgot { text-align: right; margin-bottom: 1rem; }
+.forgot a { font-size: 12px; color: #7F77DD; font-weight: 600; text-decoration: none; }
 
 button[type="submit"] {
   width: 100%;
-  padding: 12px;
-  background-color: #6c63ff;
+  padding: 13px;
+  background: #534AB7;
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
   cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.2s;
 }
 
-button[type="submit"]:hover {
-  background-color: #4e47cc;
-}
+button[type="submit"]:hover { background: #3C3489; }
 
-.register-link {
-  margin-top: 1.2rem;
-  font-size: 0.9rem;
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1.2rem 0;
 }
+.divider hr { flex: 1; border: none; border-top: 0.5px solid #CECBF6; }
+.divider span { font-size: 12px; color: #aaa; }
 
-.register-link a {
-  color: #6c63ff;
+.google-btn {
+  width: 100%;
+  padding: 11px;
+  background: #fff;
+  color: #333;
+  border: 1.5px solid #CECBF6;
+  border-radius: 10px;
+  font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
 }
 
-.register-link a:hover {
-  text-decoration: underline;
-}
+.google-btn:hover { background: #f5f3ff; }
+
+.register-link { margin-top: 1.2rem; font-size: 13px; color: #888; }
+.register-link a { color: #534AB7; font-weight: 700; text-decoration: none; }

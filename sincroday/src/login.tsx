@@ -2,24 +2,40 @@ import './loginStyles.css'
 
 function Login() {
   return (
-    <div className="login-container">
+    <div className="login-wrapper">
       <div className="login-card">
-        <h1>Bienvenido</h1>
-        <p>Inicia sesión para continuar</p>
+        <div className="login-brand">
+          <span className="login-brand-dot"></span>
+          <span>Sincroday</span>
+        </div>
+        <h1>Sincronizá tu día</h1>
+        <p className="login-sub"></p>
 
         <form>
+          <label>CORREO ELECTRÓNICO</label>
           <div className="input-group">
-            <label>Correo electrónico</label>
             <input type="email" placeholder="correo@ejemplo.com" />
           </div>
 
+          <label>CONTRASEÑA</label>
           <div className="input-group">
-            <label>Contraseña</label>
             <input type="password" placeholder="••••••••" />
+          </div>
+
+          <div className="forgot">
+            <a href="#">¿Olvidaste tu contraseña?</a>
           </div>
 
           <button type="submit">Iniciar sesión</button>
         </form>
+
+        <div className="divider">
+          <hr /><span>o continúa con</span><hr />
+        </div>
+
+        <button className="google-btn" type="button">
+          Google
+        </button>
 
         <p className="register-link">
           ¿No tienes cuenta? <a href="#">Regístrate</a>
