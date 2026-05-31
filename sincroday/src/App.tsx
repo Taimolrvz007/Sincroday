@@ -1,8 +1,7 @@
-import { Routes, Route } from 'react-router-dom'
-import Login from './Auth/login'
-import Register from './Auth/Register'
-import { ScheduleMeeting } from './userCalendar/ScheduleMeeting'
-
+import { Routes, Route } from "react-router-dom";
+import Login from "./Auth/login";
+import Register from "./Auth/Register";
+import { ScheduleMeeting } from "./userCalendar/ScheduleMeeting";
 
 function App() {
   return (
@@ -14,12 +13,12 @@ function App() {
         element={
           <ScheduleMeeting
             onSchedule={(payload) => alert(JSON.stringify(payload, null, 2))}
-            onCancel={() => console.log('cancelado')}
+            onCancel={() => console.log("cancelado")}
           />
         }
       />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
